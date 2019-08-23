@@ -8,3 +8,4 @@ that you have done before in Python, but now we will be exploring how to accompl
 Here is a list of the Coding Bat lessons:
 
 - [monkey_trouble](https://codingbat.com/prob/p120546)
+- [makes10](https://codingbat.com/prob/p124984)
