@@ -9,3 +9,4 @@ Here is a list of the Coding Bat lessons:
 
 - [monkey_trouble](https://codingbat.com/prob/p120546)
 - [makes10](https://codingbat.com/prob/p124984)
+- [has22](https://codingbat.com/prob/p119308)
