@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usetheme{Madrid}
 \usecolortheme{seahorse}
 
@@ -18,7 +19,11 @@
 \begin{frame}
   \frametitle{Our Language of Choice}
   \begin{block}{Haskell}
+    \textit{"it is a polymorphically statically typed, lazy, purely functional language, quite different from most other programming languages"}
+    \\
+    \alert{haskell.org}
   \end{block}
+  \vspace{1cm}
   \includegraphics[width=.5\linewidth]{haskell-logo.pdf}
   \centering
 \end{frame}
@@ -43,7 +48,40 @@
   \item No variables
   \item No loops
   \end{itemize}
+  Instead functions and recursion can be leaned on for all of these common tasks like iteration.
 \end{frame}
 
+\begin{frame}
+  \frametitle{An Example}
+  Counting down from 50
+  \begin{block}{Haskell}
+    \lstinputlisting[language=haskell]{examples/iter.hs}
+  \end{block}
+  \begin{block}{Python}
+    \lstinputlisting[language=python]{examples/iter.py}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Haskell Breakdown}
+  \begin{block}{Haskell}
+    \lstinputlisting[language=haskell]{examples/iter.hs}
+  \end{block}
+
+  Here \textit{mapM\textunderscore} is a function that maps the \textit{print} function to each of the elements of the list \textit{[50,49..1}
+
+  This results in a countdown from 50 to 1 as such:
+  \begin{texttt}\\
+  50
+
+  49
+
+  48
+
+  ...
+
+  1
+  \end{texttt}
+\end{frame}
 
 \end{document}
