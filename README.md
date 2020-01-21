@@ -1,4 +1,4 @@
-# Functional Lecture - Advanced Topics in Computer Science 2019-2020
+# Functional Lesson - Advanced Topics in Computer Science 2019-2020
 
 ## Example Code
 

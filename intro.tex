@@ -68,7 +68,7 @@
     \lstinputlisting[language=haskell]{examples/iter.hs}
   \end{block}
 
-  Here \textit{mapM\textunderscore} is a function that maps the \textit{print} function to each of the elements of the list \textit{[50,49..1}
+  Here \textit{mapM\textunderscore} is a function that maps the \textit{print} function to each of the elements of the list \textit{[50,49..1]}
 
   This results in a countdown from 50 to 1 as such:
   \begin{texttt}\\
@@ -84,4 +84,87 @@
   \end{texttt}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Python Breakdown}
+  \begin{block}{Python}
+    \lstinputlisting[language=python]{examples/iter.py}
+  \end{block}
+
+  This Python code produces the same result, however in a vastly different way.
+
+  This results in the same countdown from 50 to 1:
+  \begin{texttt}\\
+  50
+
+  49
+
+  48
+
+  ...
+
+  1
+  \end{texttt}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Recursion in Functional}
+  Determining if 22 shows up in a list of integers
+  \begin{block}{Haskell}
+    \lstinputlisting[language=haskell]{problems/has22.hs}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Same Problem Imperatively}
+  \begin{block}{Python}
+    \lstinputlisting[language=python]{problems/has22.py}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Functions in Math and Haskell}
+  \begin{block}{A Constant Function in Math}
+    \[f(x)=5\]
+  \end{block}
+  \begin{block}{A Constant Function in Haskell}
+    \[f=5\]
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Functions in Math and Haskell}
+  \begin{block}{A Linear Function in Math}
+    \[f(x)=2x\]
+  \end{block}
+  \begin{block}{A Linear Function in Haskell}
+    \lstinputlisting[language=haskell]{examples/linear.hs}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Critical Observation}
+  \begin{examples}
+    \lstinputlisting[language=haskell]{examples/stringfunc.hs}
+  \end{examples}
+  \textbf{It is important to take notice of what this statement is saying.}
+
+  \vspace{.5cm}
+  
+  In Python or any other imperative language, this would be saying that there exists a variable \textit{name}
+  that has the string "Mel Hoffert" stored in it. However, in a functional setting, \textit{name} is a constant function.
+\end{frame}
+
+\begin{frame}
+  \frametitle{In Summation}
+  \begin{itemize}
+  \item
+  Functional programming has seemingly few \textit{technical} differences than any imperative language, 
+  but, these few differences have mass implications. What you will notice is that while some of you Python experience will
+  transfer to Haskell, having to program without side-effects, without loops, and without variables will completely change the way
+  you have to approach a problem.
+  \item
+  Not knowing immediately how to solve what we would consider simple problems in a language will get frustrating, but just imagine you
+  are back, a few years ago learning how to use an \textit{if} statement for the first time. Practice makes perfect.
+  \end{itemize}
+\end{frame}
 \end{document}
